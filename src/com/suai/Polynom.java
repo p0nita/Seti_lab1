@@ -47,7 +47,7 @@ public class Polynom {
 
     public Polynom mod(Polynom b){
         Polynom c = new Polynom(0, "0");
-        if (deg < b.getDeg()) return c;
+        if (deg < b.getDeg()) return this;
         Polynom a = new Polynom(0, this);
         while (true) {
             Polynom b1 = new Polynom(a.deg - b.deg, b);
